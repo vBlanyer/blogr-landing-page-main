@@ -1,0 +1,10 @@
+.button--secundary {
+	border-radius: 45px;
+	background-color: hsl(353, 100%, 62%);
+	color: white;
+	padding: 1em 2em;
+	cursor: pointer;
+}
+.button--primary:hover {
+	color: hsl(240, 2%, 35%);
+}
