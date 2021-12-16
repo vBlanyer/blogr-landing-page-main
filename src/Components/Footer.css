@@ -1,0 +1,32 @@
+footer {
+    background-color: hsl(240, 10%, 16%);
+    overflow: hidden;
+    border-radius: 0 100px 0 0;
+    padding: 3em 2em;
+    font-family: 'Overpass', sans-serif;
+    gap: 3em;
+    text-align: center;
+}
+div 
+h3 {
+    color: hsl(0, 0%, 100%);
+}
+footer .nav--footer, .nav__list--footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav--footer {
+    margin-top: 3em;
+    gap: 2em;
+}
+.nav__list--footer {
+    gap: 0.5em;
+}
+@media only screen and (min-width: 1024px) {
+    footer {
+        padding: 3em 8em;
+    }
+}

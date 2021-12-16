@@ -1,0 +1,28 @@
+header {
+	background-color: hsl(356, 100%, 66%);
+	background-image: url(../img/bg-pattern-intro-mobile.svg);
+	background-size: 400%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	border-radius: 0 0 0 100px;
+	overflow: hidden;
+    padding: 3em 2em;
+}
+.header__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	color: white;
+	gap: 1em;
+}
+@media only screen and (min-width: 1024px) {
+    header {
+        padding: 3em 8em;
+    }
+}

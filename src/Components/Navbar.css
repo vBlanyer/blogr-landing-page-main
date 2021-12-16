@@ -2,7 +2,6 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 3em 1em;
 }
 button {
 	font-size: 1rem;
@@ -12,19 +11,9 @@ button {
 }
 a {
 	text-decoration: none;
-	color: hsl(240, 2%, 35%);
-}
-a:hover {
-	color: black;
 }
 ul {
 	list-style: none;
-}
-.navbar__nav-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 1em;
 }
 .navbar__nav {
 	position: absolute;
@@ -34,33 +23,50 @@ ul {
 	justify-content: space-between;
 	align-items: center;
 	gap: 1em;
-	width: calc(100% - 2em);
+	width: calc(100% - 4em);
 	padding: 2em 1em;
 	background-color: white;
 	border-radius: 5px;
 }
-.navbar__login-and-sign-up {
+.navbar__nav-menu, .navbar__list, .navbar__sign-in {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	gap: 1em;
-	padding: 1em 2em;
-	border-top: 1px solid black;
 }
 .navbar__list {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	gap: 1em;
-	width: calc(100% - 2em);
+	width: 100%;
 	padding: 2em;
 	background-color: hsl(240, 2%, 90%);
 	border-radius: 5px;
 }
+.navbar__sign-in {
+	border-top: 1px solid black;
+	padding-top: 1em;
+}
 @media only screen and (min-width: 1024px) {
 	.navbar__nav {
+		position: static;
+		padding: 0;
+	}
+	.navbar__nav, .navbar__nav-menu, .navbar__sign-in {
+		flex-direction: row;
+		background-color: transparent;
+	}
+	.navbar__nav-menu {
+		justify-content: flex-start;
+		padding-left: 2em;
+	}
+	.navbar__sign-in {
+		padding-top: 0;
+	}
+	.navbar__sign-in {
+		border-top: 0 solid white;
+		justify-content: flex-end;
+	}
+	/* .navbar__nav {
 		position: relative;
 		top: 0;
 		left: 0;
@@ -97,6 +103,7 @@ ul {
 	}
 	.navbar__login-and-sign-up {
 		flex-direction: row;
-		border-top: 0 solid transparent;
-	}
+		border-top: 0 solid transparent; 
+	}*/
+	
 }
